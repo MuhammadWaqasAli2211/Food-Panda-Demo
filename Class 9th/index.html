@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #ccc;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+        }
+        .header {
+            background-color: #ff0064;
+            padding: 10px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+        .header h3, .header p {
+            margin: 0;
+            color: white;
+        }
+        .header p {
+            border: 1px solid white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .main {
+            background-color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .main img {
+            margin-right: 20px;
+            max-width: 100%;
+            height: auto;
+        }
+        .search-container {
+            display: flex;
+            align-items: center;
+            flex: 1; /* Take remaining horizontal space */
+        }
+        .search-box {
+            width: 100%;
+            max-width: 500px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            font-size: 14px;
+            margin-left: 20px;
+        }
+        .search-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-left: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .link-container {
+            display: flex;
+            align-items: center;
+            margin-left: auto; /* Push links to the right */
+            margin-right: 20px; /* Add some space between links and right edge */
+        }
+        .link-container a {
+            margin-right: 20px;
+            border: 1px solid #ff0064;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #ff0064;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .product {
+            width: 30%;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 10px;
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product h4 {
+            margin: 10px 0;
+            color: #333;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            width: 100%;
+            padding: 10px 0;
+            margin-top: auto; /* Push the footer to the bottom */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h3>Do You need a Business Account</h3>
+            <p>Sign Up Now</p>
+        </div>
+        <div class="main">
+            <img src="foodpanda4747.jpg" width="150px">
+            <div class="search-container">
+                <input type="text" class="search-box" placeholder="Search...">
+                <button class="search-button">Search</button>
+            </div>
+            <div class="link-container">
+                <a href="login.html">Log in</a>
+                <a href="signin.html">Sign in</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="products">
+        <div class="product">
+            <img src="fast/all fast.jpeg" alt="Product 1">
+            <a href="table1.html"><h4>Fast Foods</h4></a>
+            
+        </div>
+        <div class="product">
+            <img src="chinese/allchinese.jpeg" alt="Product 2">
+            <a href="table2.html"><h4>Chinese</h4></a>
+            
+        </div>
+        <div class="product">
+            <img src="Desi/alldesi.jpg" alt="Product 3" style="height: 200px; width: 400px">
+            <a href="table3.html"><h4>Desi</h4></a>
+            
+        </div>
+        <div class="product">
+            <img src="Drinks/alldrinks.jpg" alt="Product 4">
+            <a href="table4.html"><h4>Drinks</h4></a>
+            
+        </div>
+        <div class="product">
+            <img src="Icecream/all.jpg" alt="Product 5">
+            <a href="table5.html"><h4>Ice-Creams</h4></a>
+            
+        </div>
+        <div class="product">
+            <img src="salad/all.jpg" alt="Product 6">
+            <a href="table6.html"><h4>Salads</h4></a>
+            
+        </div>
+        <!-- Add more products as needed -->
+    </div>
+
+    <footer class="footer">
+        &copy; 2021 FoodPanda. All rights reserved.
+    </footer>
+</body>
+</html>
